@@ -73,3 +73,10 @@ rule_test(
   rule = "//tests/hsc",
   size = "small",
 )
+
+rule_test(
+  name = "test-hsboot",
+  generates = ["hsboot"],
+  rule = "//tests/hsboot",
+  size = "small",
+)

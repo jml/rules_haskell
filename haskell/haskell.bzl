@@ -75,7 +75,7 @@ _haskell_common_attrs = {
     doc="Directory in which module hierarchy starts."
   ),
   "srcs": attr.label_list(
-    allow_files=FileType([".hs"]),
+    allow_files=FileType([".hs", ".hs-boot"]),
     doc="A list of Haskell sources to be built by this rule."
   ),
   "c_sources": attr.label_list(
